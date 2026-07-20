@@ -7,5 +7,5 @@ export function proxy(request: NextRequest) {
 
 // 设置匹配路径
 export const config = {
-  matcher: "/about/:path*",
+  matcher: "/abouts/:path*",
 };
