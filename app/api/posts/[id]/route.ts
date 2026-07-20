@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(
   request: NextRequest,
-  context: RouteContext<"/api/posts/[id]">,
+  context: { params: Promise<{ id: string }> },
 ) {
   const { id } = await context.params;
   const field = request.nextUrl.searchParams.get("dataField");
